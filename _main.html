@@ -1,0 +1,65 @@
+<blh:head_required />
+<blh:body_required />
+<div id="page-wrapper" class="{blh:post_inside hyphen=" 1"}">
+
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="/">
+                <img src="https://m.blog.hu/bi/bitfejek/skins/bitfejek/img/logo.svg" alt="Bitfejek">
+            </a>
+            <nav class="navigation">
+                <blh:menu />
+            </nav>
+        </div>
+    </header>
+
+    <blhc:if key="pageType" value="blogcimlap" operator="eq">
+        <section class="section section--hero">
+            <div class="container">
+                <img src="https://m.blog.hu/bi/bitfejek/skins/bitfejek/img/illustration.svg" class="hero" alt="">
+            </div>
+        </section>
+    </blhc:if>
+
+    <section class="section">
+        <div class="container">
+            <div class="article-container">
+                <blhc:postloop>
+
+                    <article class="article">
+                        <h2 class="article__title"><a href="{blh:post_permalink}">
+                                <blh:post_title /></a></h2>
+                        <div class="article__meta">
+                            <span class="meta__icon meta__icon--date">
+                                <blh:post_date format="Y. M d." /></span>
+                            <span class="meta__icon meta__icon--author">
+                                <blh:post_author /></span>
+                            <span class="meta__icon meta__icon--tags">
+                                <blh:post_tags text="">
+                            </span>
+                            <blh:post_edit before="" after="" />
+                        </div>
+
+                        <div class="article__excerpt">
+                            <blh:post_content length="480" cutoff="..." />
+                        </div>
+                        <blhc:if key="pageType" value="blogcimlap" operator="eq">
+                            <a href="{blh:post_permalink}" class="article__more">tovább olvasom</a>
+                        </blhc:if>
+                    </article>
+
+                </blhc:postloop>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <blh:nonpost disp="comments" />
+    </section>
+
+    <blhc:if key="pageType" value="blogcimlap" operator="eq">
+        <blh:pager prelabel="előző oldal" nxtlabel="következő oldal" />
+    </blhc:if>
+</div>
+<script src="https://m.blog.hu/bi/bitfejek/skins/bitfejek/scripts.js"></script>
+<blh:end />

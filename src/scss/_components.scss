@@ -80,6 +80,10 @@
 
         .hero {
             margin: 0 80px;
+            
+            @include mobile {
+                margin: 0;
+            }
         }
 
         @include desktop {
