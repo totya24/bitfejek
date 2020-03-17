@@ -1,0 +1,33 @@
+// Color Variables
+$primary-color: #2980B9;
+$text-color: #666;
+$text-color-dark: #333;
+$light: #eee;
+$white: #fff;
+
+$primary-font: 'Muli', sans-serif;
+
+@mixin mobile {
+    @media(max-width:460px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(max-width:767px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(max-width:1024px) {
+        @content;
+    }
+}
+
+@import 'reset';
+@import 'typography';
+@import 'components';
+@import 'article';
+
+@import 'highlight';

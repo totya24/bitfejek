@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hu-hu">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bitfejek</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="description" content="This is meta description">
+    <link rel="stylesheet" href="styles.css" media="screen">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="javascript:void(0)">
+                <img src="img/logo.svg" alt="Bitfejek">
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li><a class="nav-link" href="javascript:void(0)">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="article-container">
+
+                <article class="article">
+                    <h2 class="article__title"><a href="post.html">Tévedni emberi dolog - lebegni isteni</a></h2>
+                    <div class="article__meta">
+                        <span class="meta__icon meta__icon--date">2007. jan 16.</span>
+                        <span class="meta__icon meta__icon--author"><a href="#">woodyallen</a></span>
+                        <span class="meta__icon meta__icon--tags"><a href="#">kesz-anarchia</a> <a
+                                href="#">i-fejezet</a></span>
+                    </div>
+
+                    <div class="article__excerpt">
+                        <p><img src="img/placeholder.jpg" alt="placehodler.jpg" class="imgnotext open-in-modal" /></p>
+                        <p><strong>Levegő után kapkodok,</strong> miközben életem egy sor bánatos címke formájában vonul
+                            el előttem,
+                            mert néhány hónappal ezelőtt arra eszméltem, hogy fuldoklom a kéretlen reklámok cunamijában,
+                            amelyek reggelenként a <span style="text-decoration: line-through;">sós-füstölt</span>
+                            hering után beözönlenek a levélnyíláson.
+                            Bogárszívónk segítségével mentett meg wagneri takarítónőnk, Grendel, aki hallotta
+                            fojtott fejhangomat a <em>miriád kiállítási meghívó</em>, adománykunyeráló levél és az
+                            általam megütött főnyeremények alól.
+                        </p>
+
+                        <h1>H1 - Címsor 1</h1>
+                        <h2>H2 - Címsor 2</h2>
+                        <h3>H3 - Címsor 3</h3>
+                        <h4>H4 - Címsor 4</h4>
+                        <h5>H5 - Címsor</h5>
+                        <address>Address<br />1234 Hungary<br />Fő utca 2/B</address>
+                        <pre>Preformatted</pre>
+                        <pre><code class="javascript">function emailActiveClients(clients) {
+    clients.filter(isActiveClient).forEach(email);
+}
+
+function isActiveClient(client) {
+    const clientRecord = database.lookup(client);
+    return clientRecord.isActive();
+}</code></pre>
+                        <h2>Felsorolás</h2>
+                        <ul>
+                            <li>Első elem</li>
+                            <li>Második elem</li>
+                            <li>Harmadik elem</li>
+                            <li>Negyedik elem</li>
+                        </ul>
+                        <h2>Számozott lista</h2>
+                        <ol>
+                            <li>Első sor</li>
+                            <li>Második sor</li>
+                            <li>Harmadik sor</li>
+                            <li>Negyedik sor</li>
+                            <li>Ötödik sor</li>
+                        </ol>
+                        <blockquote>
+                            <p><span>Idézet - A művelt emberiségnek üzenem: Mindenütt jó, de legjobb a Horchman-pneu és
+                                    tömlő, ugyanott elsőrangú golyóscsapágy!</span></p>
+                        </blockquote>
+                        <div class="frame">
+                            <p>Nem az első eset, hogy a tudomány hosszú és fárasztó vargabetűvel
+                                egy távoli évszázadban találta meg azt a kis igazságot, amit a nagyképűség és a
+                                kapzsiság meghamisított iránytűje nélkül a szomszédos évtizedből könnyen kivehetett
+                                volna, mintha csak a szekrényében tartaná.</p>
+                        </div>
+                        <p> </p>
+                        <p> </p>
+                        <h2>Videó</h2>
+                        <p style="text-align: center;"><iframe width="100%" height="360"
+                                src="https://www.youtube.com/embed/o8NPllzkFhE?enablejsapi=1" frameborder="0"
+                                allowfullscreen="true" data-adreal-frame-name="frm-1582386220453923"></iframe></p>
+                        <p style="text-align: center;"> </p>
+                        <h2 style="text-align: left;">Táblázat</h2>
+                        <table cellspacing="0" style="width: 100%; border-color: #444; border-collapse: collapse;">
+                            <tbody>
+                                <tr>
+                                    <td>Single Responsibility Principle</td>
+                                    <td>Egy felelősség elve</td>
+                                    <td>Egy osztály vagy modul egy, és csak egy felelősséggel rendelkezzen (azaz: egy
+                                        oka legyen a változásra).</td>
+                                </tr>
+                                <tr>
+                                    <td>Open/Closed Principle</td>
+                                    <td>Nyílt/zárt elv</td>
+                                    <td>Egy osztály vagy modul, legyen nyílt a kiterjesztésre, de zárt a módosításra.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Liskov substitution principle</td>
+                                    <td>Liskov helyettesítési elv</td>
+                                    <td>Minden osztály legyen helyettesíthető a leszármazott osztályával anélkül, hogy a
+                                        program helyes működése megváltozna.</td>
+                                </tr>
+                                <tr>
+                                    <td>Interface segregation principle</td>
+                                    <td>Interface elválasztási elv</td>
+                                    <td>Több specifikus interface jobb, mint egy általános.</td>
+                                </tr>
+                                <tr>
+                                    <td>Dependency inversion principle</td>
+                                    <td>Függőség megfordítási elv</td>
+                                    <td>A kódod függjön absztrakcióktól, ne konkrét implementációktól.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="src/js/scripts.js"></script>
+</body>
+</html>

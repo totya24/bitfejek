@@ -1,0 +1,17 @@
+{
+  "name": "bitfejek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "js": "uglifyjs src\\js\\scripts.js --compress --mangle --warn --output scripts.js",
+    "css": "node-sass src/scss/styles.scss -o .",
+    "css:watch": "npm run css && node-sass src/scss/styles.scss -wo ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

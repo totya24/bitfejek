@@ -1,0 +1,64 @@
+/*  typography */
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap');
+
+body {
+  line-height: 1.5;
+  font-family: $primary-font;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  color: $text-color;
+  background-color: $white;
+}
+
+p, .paragraph {
+  font-weight: 400;
+  color: $text-color;
+  line-height: 1.5;
+  font-family: $primary-font;
+}
+
+
+a {
+  color: $primary-color;
+  cursor: pointer;
+  transition: .2s ease;
+  &:hover{
+    color: $primary-color;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $text-color-dark;
+  font-family: $primary-font;
+  font-weight: 600;
+  line-height: 1.2;
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
