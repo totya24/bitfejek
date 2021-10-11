@@ -1,3 +1,3 @@
-## Bitfejek blog.hu template
+## Bitfejek blog template - WORK IN PROGRESS
   
-The main template of http://bitfejek.blog.hu blog.
+The main template of bitfejek blog.
